@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "731682836725",
+    "project_id": "register-42a85",
+    "storage_bucket": "register-42a85.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:731682836725:android:0b2a2b2818551ecd06f5bc",
+        "android_client_info": {
+          "package_name": "com.example.baruintro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "731682836725-bqrsrar7a3p8n8isiik4hb3a89vhc2sh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFJoXd0fXy4j17IzjzDz8ifURgcQuBmKg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "731682836725-bqrsrar7a3p8n8isiik4hb3a89vhc2sh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

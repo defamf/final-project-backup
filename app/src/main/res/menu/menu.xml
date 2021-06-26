@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_baseline_home_24"/>
+    <item android:title="Wallet"
+        android:id="@+id/walletFragment"
+        android:icon="@drawable/ic_baseline_account_balance_wallet_24"/>
+    <item android:title="Transaction"
+        android:id="@+id/transactionFragment"
+        android:icon="@drawable/ic_baseline_payments_24"/>
+    <item android:title="Investment"
+        android:id="@+id/investmentFragment"
+        android:icon="@drawable/ic_baseline_analytics_24"/>
+    <item android:title="Profile"
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_baseline_account_box_24"/>
+</menu>
