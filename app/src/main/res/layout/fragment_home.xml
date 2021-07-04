@@ -11,35 +11,47 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="30dp"
+        android:paddingTop="20dp"
         android:paddingLeft="25dp"
         android:paddingRight="25dp">
 
-        <TextView
-            android:id="@+id/tvWelcomeBack"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Welcome Back"
-            android:textSize="20sp"
-            android:textColor="@color/black"/>
-        <TextView
-            android:id="@+id/tvName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Defa"
-            android:textSize="28sp"
-            android:letterSpacing="0.04"
-            android:fontFamily="sans-serif-black"
-            android:layout_below="@+id/tvWelcomeBack"
-            android:textColor="@color/black"/>
         <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:src="@drawable/keempat"
-            android:layout_alignParentRight="true"/>
+            android:id="@+id/imageView2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="39dp"
+            android:src="@drawable/ic_baseline_notifications" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="170dp"
+            android:layout_toStartOf="@+id/imageView2"
+            android:fontFamily="sans-serif"
+            android:letterSpacing="0.05"
+            android:text="Hi Rudi!"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginEnd="52dp"
+            tools:src="@drawable/profil" />
+
 
     </RelativeLayout>
-
     <LinearLayout
         android:layout_width="338dp"
         android:layout_height="170dp"
@@ -58,7 +70,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rp 30.000.000"
+            android:text="Rp 3.000.000"
             android:textSize="30dp"
             android:textStyle="bold"
             android:fontFamily="sans-serif-black"
@@ -70,14 +82,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingLeft="25dp"
-        android:paddingTop="20dp">
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Featured"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/black"
+            android:letterSpacing="0.02"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="18dp"
+        android:paddingTop="10dp">
         <androidx.cardview.widget.CardView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             app:cardElevation="10dp"
             app:cardCornerRadius="10dp"
-            app:cardBackgroundColor="@color/karry"
             android:layout_marginBottom="20dp">
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -88,23 +115,15 @@
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/ic_baseline_analytics_24"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Pay"
-                    android:textStyle="bold"
-                    android:textSize="22sp"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="8dp"/>
+                    android:src="@drawable/ic_baseline_article_24"/>
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             app:cardElevation="10dp"
             app:cardCornerRadius="10dp"
-            app:cardBackgroundColor="@color/karry"
             android:layout_marginBottom="20dp"
             android:layout_marginLeft="30dp">
             <LinearLayout
@@ -116,23 +135,14 @@
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/ic_baseline_analytics_24"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Pay"
-                    android:textStyle="bold"
-                    android:textSize="22sp"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="8dp"/>
+                    android:src="@drawable/ic_baseline_assistant_24" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             app:cardElevation="10dp"
             app:cardCornerRadius="10dp"
-            app:cardBackgroundColor="@color/karry"
             android:layout_marginBottom="20dp"
             android:layout_marginLeft="30dp">
             <LinearLayout
@@ -144,15 +154,27 @@
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/ic_baseline_analytics_24"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Pay"
-                    android:textStyle="bold"
-                    android:textSize="22sp"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="8dp"/>
+                    android:src="@drawable/ic_baseline_credit_card_24"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_loupe_24"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </LinearLayout>
@@ -165,7 +187,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Transaction"
-            android:textSize="25dp"
+            android:textSize="20dp"
             android:textStyle="bold"
             android:fontFamily="sans-serif-black"
             android:textColor="@color/black"
@@ -174,7 +196,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="View All"
-            android:textSize="23dp"
+            android:textSize="15dp"
             android:textColor="@color/black"
             android:gravity="end"
             android:layout_marginRight="25dp"/>
@@ -193,37 +215,36 @@
                 android:id="@+id/iv1"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:src="@drawable/keempat"/>
+                android:src="@drawable/netflix"/>
             <TextView
                 android:id="@+id/netflix"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Netflix"
                 android:layout_toRightOf="@id/iv1"
-                android:textSize="25sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:fontFamily="sans-serif-black"
-                android:textColor="@color/koromiko"
+                android:textColor="@color/black"
                 android:layout_marginLeft="20dp"
                 android:letterSpacing="0.03"/>
             <TextView
                 android:id="@+id/tanggal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="15 Dec - 14 Jan"
+                android:text="Today"
                 android:textSize="15sp"
                 android:layout_toRightOf="@id/iv1"
                 android:layout_below="@id/netflix"
-                android:textColor="@color/koromiko"
                 android:layout_marginLeft="20dp"
                 android:letterSpacing="0.03"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Rp 500.000"
-                android:textSize="23sp"
+                android:text="- Rp 50K"
+                android:textSize="15sp"
                 android:textStyle="bold"
-                android:textColor="@color/koromiko"
+                android:textColor="@color/black"
                 android:layout_marginLeft="20dp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentRight="true"
@@ -241,37 +262,36 @@
                 android:id="@+id/iv2"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:src="@drawable/keempat"/>
+                android:src="@drawable/tokopedia"/>
             <TextView
                 android:id="@+id/netflix2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Netflix"
+                android:text="Tokopedia"
                 android:layout_toRightOf="@id/iv2"
-                android:textSize="25sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:fontFamily="sans-serif-black"
-                android:textColor="@color/koromiko"
+                android:textColor="@color/black"
                 android:layout_marginLeft="20dp"
                 android:letterSpacing="0.03"/>
             <TextView
                 android:id="@+id/tanggal2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="15 Dec - 14 Jan"
+                android:text="Yesterday"
                 android:textSize="15sp"
                 android:layout_toRightOf="@id/iv2"
                 android:layout_below="@id/netflix2"
-                android:textColor="@color/koromiko"
                 android:layout_marginLeft="20dp"
                 android:letterSpacing="0.03"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Rp 500.000"
-                android:textSize="23sp"
+                android:text="- Rp 500K"
+                android:textSize="15sp"
                 android:textStyle="bold"
-                android:textColor="@color/koromiko"
+                android:textColor="@color/black"
                 android:layout_marginLeft="20dp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentRight="true"
@@ -289,42 +309,44 @@
                 android:id="@+id/iv3"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:src="@drawable/keempat"/>
+                android:src="@drawable/gopay"/>
             <TextView
                 android:id="@+id/netflix3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Netflix"
+                android:text="Gopay"
                 android:layout_toRightOf="@id/iv3"
-                android:textSize="25sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:fontFamily="sans-serif-black"
-                android:textColor="@color/koromiko"
+                android:textColor="@color/black"
                 android:layout_marginLeft="20dp"
                 android:letterSpacing="0.03"/>
             <TextView
                 android:id="@+id/tanggal3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="15 Dec - 14 Jan"
+                android:text="30 May 2021"
                 android:textSize="15sp"
                 android:layout_toRightOf="@id/iv3"
                 android:layout_below="@id/netflix3"
-                android:textColor="@color/koromiko"
                 android:layout_marginLeft="20dp"
                 android:letterSpacing="0.03"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Rp 500.000"
-                android:textSize="23sp"
+                android:text="- Rp 20K"
+                android:textSize="15sp"
                 android:textStyle="bold"
-                android:textColor="@color/koromiko"
+                android:textColor="@color/black"
                 android:layout_marginLeft="20dp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="5dp"/>
         </RelativeLayout>
     </RelativeLayout>
-
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+    </RelativeLayout>
 </LinearLayout>

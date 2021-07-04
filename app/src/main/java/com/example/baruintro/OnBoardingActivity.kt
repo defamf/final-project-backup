@@ -24,7 +24,7 @@ class OnBoardingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         if(restorePrefData()){
-            val i=Intent(applicationContext, LoginActivity::class.java)
+            val i=Intent(applicationContext, DashboardActivity::class.java)
             startActivity(i)
             finish()
         }
@@ -37,7 +37,7 @@ class OnBoardingActivity : AppCompatActivity() {
         val onBoardingData:MutableList<OnBoardingData> = ArrayList()
         onBoardingData.add(OnBoardingData("Smart Wallet","Memberikan keamanan dan kemudahan untuk menyimpan uang digital kamu",R.drawable.kedua))
         onBoardingData.add(OnBoardingData("Smart Invest","Temukan berbagai keuntungan investasi dengan manajemen resiko yang bermutu",R.drawable.ketiga))
-        onBoardingData.add(OnBoardingData("Smart Calculator","Nikmati biaya transfer yang lebih murah dan cepat dibandingkan melalui bank",R.drawable.keempat))
+        onBoardingData.add(OnBoardingData("Smart Calculator","Menganalisis pengeluaran anda untuk mendapatkan penawaran terbaik dari kami",R.drawable.keempat))
 
         setOnBoardingViewPagerAdapter(onBoardingData)
 
@@ -52,7 +52,7 @@ class OnBoardingActivity : AppCompatActivity() {
 
             if(position == onBoardingData.size){
                 savePrefData()
-                val i=Intent(applicationContext, LoginActivity::class.java)
+                val i=Intent(applicationContext, DashboardActivity::class.java)
                 startActivity(i)
                 finishAffinity()
             }
