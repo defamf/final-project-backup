@@ -24,7 +24,7 @@ class OnBoardingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         if(restorePrefData()){
-            val i=Intent(applicationContext, DashboardActivity::class.java)
+            val i=Intent(applicationContext, MainCRUD::class.java)
             startActivity(i)
             finish()
         }
@@ -52,7 +52,7 @@ class OnBoardingActivity : AppCompatActivity() {
 
             if(position == onBoardingData.size){
                 savePrefData()
-                val i=Intent(applicationContext, DashboardActivity::class.java)
+                val i=Intent(applicationContext, MainCRUD::class.java)
                 startActivity(i)
                 finishAffinity()
             }
